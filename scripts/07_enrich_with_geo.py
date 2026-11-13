@@ -239,7 +239,7 @@ def match_to_nearest_road(
     if not valid_mask.any():
         return result
 
-    # Project to a metric CRS (UTM 43N covers all four cities) so distances are metres.
+    # Project to a metric CRS (UTM 43N covers all four cities) so distances are meters.
     pts = gpd.GeoDataFrame(
         {"_idx": df.index[valid_mask]},
         geometry=gpd.points_from_xy(df.loc[valid_mask, "gps_lon"], df.loc[valid_mask, "gps_lat"]),

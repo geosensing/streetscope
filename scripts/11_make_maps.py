@@ -268,7 +268,7 @@ def make_sex_ratio_map(geo: pd.DataFrame, city: str) -> None:
     legend_html = """
     <div style="position: fixed; bottom: 50px; left: 50px; z-index: 1000;
                 background-color: white; padding: 10px; border-radius: 5px;
-                border: 2px solid grey; font-size: 12px;">
+                border: 2px solid gray; font-size: 12px;">
         <b>Percent Women</b><br>
         <i style="background: {c0}; width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></i> 0%<br>
         <i style="background: {c25}; width: 12px; height: 12px; display: inline-block; border-radius: 50%;"></i> 25%<br>

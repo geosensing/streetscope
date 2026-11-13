@@ -50,3 +50,8 @@ extend-exclude = [
 extend-select = ["I"]                                 # isort-style import sorting
 # E402: matplotlib scripts must call matplotlib.use(...) before importing pyplot.
 ignore = ["E402"]
+
+[tool.codespell]
+builtin = "clear,rare,en-GB_to_en-US"
+skip = "*.pdf,*.png,*.jpg,*.jpeg,*.csv,*.tsv,*.json,*.geojson,*.graphml,*.ipynb,*.html,*.svg,*.bib,*.bbl,*.lock,*.parquet,./sampling,./data"
+ignore-words-list = "ist,behaviour,greys,nd"
