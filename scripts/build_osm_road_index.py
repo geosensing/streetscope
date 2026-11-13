@@ -35,7 +35,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 SCRIPTS = Path(__file__).parent
 DATA = PROJECT_ROOT / "data"
 
-# UTM 43N: metric CRS covering all four cities, so buffers/distances are in metres.
+# UTM 43N: metric CRS covering all four cities, so buffers/distances are in meters.
 METRIC_CRS = "EPSG:32643"
 BUFFER_M = 100.0  # keep roads within 100 m of the track (07 matches within 50 m)
 MAX_TRACK_POINTS = 20000  # downsample the GPS track for an efficient spatial join
